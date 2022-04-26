@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--主要属性
+    hint输入提示
+    textColorHint输入提示文字的颜色
+    inputType输入类型
+    drawableXxxx(例如drawableLeft)在输入框的指定方位添加图片
+    drawablePadding设置图片与输入内容的间距
+    paddingXxxx设置内容与边框的间距
+    android:background="@color/white"可以去除边框线-->
+    <EditText
+        android:id="@+id/et"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:hint="@string/hint_value"
+        android:textColorHint="@color/hint_color"
+        android:inputType="text"
+        android:drawableLeft="@drawable/ic_baseline_emoji_emotions_24"
+        android:drawablePadding="20dp"
+        android:paddingLeft="20dp"
+        android:background="@color/white"
+        />
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:hint="@string/hint_value2"
+        android:textColorHint="@color/hint_color"
+        android:inputType="number"
+        android:background="@color/white"
+        />
+    <Button
+        android:id="@+id/btn"
+        android:text="@string/btn_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+
+
+</LinearLayout>

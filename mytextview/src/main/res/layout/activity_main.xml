@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--layout：线性布局，相当于容器-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <!--TextView：控件，要放到容器里
+    wrap_content:自动分配宽度
+    textColor="#透明度00(FF不透明) 红色00 绿色00 蓝色00"
+    background可以设置color或者图片
+    gravity用来控制元素在该控件里的显示位置-->
+
+    <!--带阴影的TextView
+    shadowColor需要与shadowRadius一起使用
+    shadowRadius设置阴影模糊程度，0.1变成字体颜色，建议3.0
+    shadowDx设置阴影在水平方向的偏移，即水平方向阴影开始的横坐标
+    shadowDy设置阴影在竖直方向的偏移，即竖直方向阴影开始的纵坐标-->
+
+    <!--跑马灯效果的TextView
+    singleLine内容单行显示
+    focusable是否可以获取焦点
+    focusablelnTouchMode用于控制视图在触摸模式下是否可以聚焦
+    ellipsize在哪里省略文本
+    marqueeRepeatLimit字幕动画重复的次数-->
+    <TextView
+        android:id="@+id/tv_one"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="@string/tv_one"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:shadowColor="@color/purple_200"
+        android:shadowRadius="3.0"
+        android:shadowDx="10.0"
+        android:shadowDy="10.0"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textStyle="italic" />
+        <requestFocus/>
+
+</LinearLayout>
