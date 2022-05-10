@@ -3,6 +3,7 @@ pluginManagement {
         gradlePluginPortal()
         google()
         mavenCentral()
+
     }
 }
 dependencyResolutionManagement {
@@ -19,3 +20,29 @@ include ':mybutton'
 include ':myedittext'
 include ':myimageview'
 include ':myprogressBar'
+include ':mynotifaction'
+include ':mynotification'
+include ':myToolbar'
+include ':myalterdialog'
+include ':myalertdialog'
+include ':mypopupwindow'
+include ':mylinearLayout'
+include ':mystudy1'
+include ':mylistview'
+include ':myrecyclerview'
+include ':myanimation'
+include ':mytest'
+include ':mystudy2'
+include ':mystudy02'
+include ':myfragment'
+include ':myfragment2'
+include ':mystudy3wechat'
+include ':myviewpagerfragment'
+include ':myreceiver'
+include ':myglide'
+include ':myproject'
+include ':myintent'
+include ':mysp'
+include ':myokhttp'
+include ':myretrofit'
+include ':myprojectTest'

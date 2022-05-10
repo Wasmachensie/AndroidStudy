@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <!--fragment和activity绑定-->
+    <!--fragment通过name和定义的Java中Fragment绑定-->
+    <!--注意fragment一定要有id，-->
+    <fragment android:name="com.example.myfragment.BlankFragment1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/fragment1"/>
+
+    <!--在activity中添加两个fragment-->
+    <fragment android:name="com.example.myfragment.BlankFragment2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/fragment2"/>
+
+</LinearLayout>

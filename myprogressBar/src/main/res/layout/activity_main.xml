@@ -1,26 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical">
     <!--主要元素
     android:max进度条最大值
     android:progress进度条已完成进度值
+
+    android:visibility进行指定，可选值有3种：
+    visible可见、invisible透明和gone不可见。
+    Java代码中setVisibility()方法，
+    可以传入View.VISIBLE、View.INVISIBLE和View.GONE这3种值。
+
     android:indeterminate如果设置为true，则进度条不显示进度
-    style="?android:"水平进度条-->
+    style="?android:attr/progressBarStyleHorizontal"水平进度条-->
 
 
     <ProgressBar
         android:id="@+id/pb"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        />
+        android:layout_height="wrap_content" />
 
     <Button
         android:text="@string/btn"
         android:onClick="ArnoClick"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/pb2"
+        android:layout_width="100dp"
         android:layout_height="wrap_content"
-        />
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100" />
+
+    <Button
+        android:text="@string/btn2"
+        android:onClick="Download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="UsingOnClickInXml" />
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:layout_width="300dp"
+        android:indeterminate="true"
+        android:layout_height="wrap_content"/>
+
 
 </LinearLayout>

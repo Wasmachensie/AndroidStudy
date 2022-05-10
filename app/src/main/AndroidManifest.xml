@@ -10,14 +10,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Derry">
         <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
+            <!--激活默认的Activity的意图-->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!--组件必须在清单文件里注册-->
+        <service android:name=".MyService" />
     </application>
 
 </manifest>

@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="btn">显示隐藏进度条</string>
+    <string name="btn2">模拟下载</string>
 </resources>
