@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestNavFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tv_testNavFrag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="TestNavFragment"
+        android:gravity="center"
+        android:textSize="50sp" />
+
+    <!--fragment容器-->
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/fg_container" />
+
+
+</FrameLayout>
